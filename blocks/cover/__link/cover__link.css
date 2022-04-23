@@ -7,7 +7,7 @@
     -moz-background-size: cover;
     -webkit-background-size: cover;
     text-decoration: none;
-    color: #ffffff;
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,24 +33,10 @@
   .cover__link:hover::before {
     opacity: 0.8;
   }
-  
-  @media screen and (max-width: 1024px) {
-    .cover__link {
-      min-height: 640px;
-      width: 100%;
-    }
+
+  @media screen and (max-width: 1185px)
+{
+  .cover__link {
+    min-height: calc(100vw*740/1184);
   }
-  
-  @media screen and (max-width: 768px) {
-    .cover__link {
-      min-height: 480px;
-      width: 100%;
-    }
-  }
-  
-  @media screen and (max-width: 320px) {
-    .cover__link {
-      min-height: 200px;
-      width: 100%;
-    }
-  }
+}
